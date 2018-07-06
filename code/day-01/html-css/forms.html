@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <title>Forms</title>
+</head>
+
+<body>
+  <h1>Customer Information</h1>
+  <form method="POST">
+    <div>
+      <!-- Name -->
+      <label for="name">Name:</label>
+      <input id="name" type="text" placeholder="name" name="cName" required pattern="abc">
+    </div>
+    <div>
+      <!-- Phone -->
+      <label>Phone:</label>
+      <input type="text" placeholder="phone" name="cPhone" required>
+    </div>
+    <div>
+      <!-- Email -->
+      <label for="email">Email:</label>
+      <input id="email" type="text">
+    </div>
+
+    <div>
+      <!-- City -->
+      <label>City:</label>
+      <input type="text">
+    </div>
+
+    <div>
+      <!-- Password -->
+      <label>Password:</label>
+      <input type="password" name="cPwd" required minlength="5" maxlength="10">
+    </div>
+
+    <div>
+      <label>Languages:</label>
+      <input type="checkbox" checked> Java
+      <input type="checkbox"> C++
+    </div>
+
+    <div>
+      <label>Colors:</label>
+      <input type="radio" name="color" value="r" checked> Red
+      <input type="radio" name="color" value="g"> Green
+    </div>
+
+    <div>
+      <label>Description:</label>
+      <textarea cols="50" rows="5"></textarea>
+    </div>
+
+    <div>
+      <label>Birth Date:</label>
+      <input type="color">
+    </div>
+
+    <div>
+      <label>City:</label>
+      <select size="3" multiple>
+        <option value="1">Bengaluru</option>
+        <option value="2">Mumbai</option>
+        <option value="3">Pune</option>
+
+      </select>
+    </div>
+
+    <!-- Submit button -->
+    <input type="submit">
+    <input type="reset">
+  </form>
+</body>
+
+</html>

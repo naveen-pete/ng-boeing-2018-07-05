@@ -1,0 +1,37 @@
+/* li {
+  color: red;
+  background-color: rgba(0, 0, 0, 1);
+}
+
+a {
+  color: green;
+}
+
+h1 {
+  background-color: lightgray;
+  color: hsl(270, 60%, 70%);
+}
+
+body {
+  background-image: url(bg-image.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+div {
+  border-color: blueviolet;
+  border-style: solid;
+  border-radius: 10px
+} */
+
+p {
+  color: blue;
+}
+
+#paratest {
+  color: red;
+}
+
+.pctest {
+  color: green;
+}
