@@ -4,15 +4,20 @@
 <head>
   <meta charset="utf-8" />
   <title>Forms</title>
+  <script src="forms.js"></script>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"
+    crossorigin="anonymous">
+
 </head>
 
 <body>
   <h1>Customer Information</h1>
-  <form method="POST">
+  <div id="result"></div>
+  <form method="POST" name="customerForm">
     <div>
       <!-- Name -->
       <label for="name">Name:</label>
-      <input id="name" type="text" placeholder="name" name="cName" required pattern="abc">
+      <input id="name" type="text" placeholder="name" name="cName" required>
     </div>
     <div>
       <!-- Phone -->
@@ -70,9 +75,15 @@
     </div>
 
     <!-- Submit button -->
-    <input type="submit">
+    <button onclick="onSave()" class="btn btn-success">Save</button>
     <input type="reset">
+
+
   </form>
+  <script>
+    var divResult = document.getElementById('result');
+    divResult.innerHTML = "<h2>Result updated</h2>"
+  </script>
 </body>
 
 </html>

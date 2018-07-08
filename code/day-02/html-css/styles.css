@@ -24,14 +24,30 @@ div {
   border-radius: 10px
 } */
 
-p {
-  color: blue;
+/* p {
+  color: red;
+  line-height: 2;
+  text-align: justify;
+  font-weight: bold;
+  border: solid 2px;
+} */
+
+span {
+  font-size: 2em;
+  font-weight: bold
 }
 
-#paratest {
+#special {
   color: red;
+  width: 50%;
+  padding: 10px 30px;
+  margin: 30px;
 }
 
 .pctest {
   color: green;
+}
+
+a {
+  text-decoration: wavy underline
 }
