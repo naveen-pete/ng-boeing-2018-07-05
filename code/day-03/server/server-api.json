@@ -19,20 +19,6 @@
       "description": "Raised in a remote tribal village, Shivudu grows up a carefree young man who relentlessly pursues his heart\"s desire.",
       "isAvailable": false,
       "price": 299
-    },
-    {
-      "name": "p100",
-      "description": "p100 desc",
-      "price": 100,
-      "isAvailable": true,
-      "id": 5
-    },
-    {
-      "name": "p101",
-      "description": "p101 desc",
-      "price": 102,
-      "isAvailable": true,
-      "id": 6
     }
   ],
   "customers": [{
