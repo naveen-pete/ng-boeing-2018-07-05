@@ -1,5 +1,6 @@
 {
-  "products": [{
+  "products": [
+    {
       "id": 1,
       "name": "Data Structures and Algorithms  1",
       "description": "Book description 1",
@@ -21,7 +22,8 @@
       "price": 299
     }
   ],
-  "customers": [{
+  "customers": [
+    {
       "id": 1,
       "name": "John",
       "phone": "9988776655",
@@ -48,6 +50,27 @@
       "phone": "2244668800",
       "email": "amar@abc.xyz",
       "city": "New Delhi"
+    },
+    {
+      "name": "c1",
+      "phone": "12345",
+      "email": "c1@abc.com",
+      "city": "Bengaluru",
+      "id": 5
+    },
+    {
+      "name": "c2",
+      "phone": "12345",
+      "email": "c2@abc.com",
+      "city": "Mumbai",
+      "id": 6
+    },
+    {
+      "name": "c3",
+      "phone": "12345",
+      "email": "c3@abc.om",
+      "city": "mysore",
+      "id": 7
     }
   ],
   "employees": []
