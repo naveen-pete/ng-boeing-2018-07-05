@@ -7,6 +7,9 @@
 // Get comments for a particular post id
 // https://jsonplaceholder.typicode.com/posts/21/comments
 
+// Example for nested callbacks
+// Results in callback hell
+
 const username = 'Samantha';
 xhrGet(`https://jsonplaceholder.typicode.com/users/?username=${username}`, (err, users) => {
   if (err) {
@@ -31,6 +34,7 @@ xhrGet(`https://jsonplaceholder.typicode.com/users/?username=${username}`, (err,
       }
 
       console.log('comments:', comments);
+      // Here Array.map() returns an array of objects with id and email address
       // const emails = comments.map(function (comment) {
       //   return {
       //     id: comment.id,
@@ -39,41 +43,16 @@ xhrGet(`https://jsonplaceholder.typicode.com/users/?username=${username}`, (err,
       // });
 
       // Anonymous function syntax
+      // Here the Array.map() returns an array of strings, only email ids
       // const emails = comments.map(function (comment) {
       //   return comment.email;
       // });
 
       // Arrow function syntax
+      // Does the same thing as lines 44 to 46, this shorter syntax
       const emails = comments.map(comment => comment.email);
 
       console.log('emails:', emails);
     });
   });
 });
-
-// function a() {
-//   console.log('a()');
-// }
-
-// var b = function () {
-//   console.log('b()');
-// };
-
-// a();
-// b();
-
-// Arrow Functions
-// 1
-// var double = (n) => {
-//   return n * 2;
-// }
-
-// 2
-// var double = n => {
-//   return n * 2;
-// }
-
-// 3
-// var double = n => n * 2;
-
-// console.log('double:', double(10));

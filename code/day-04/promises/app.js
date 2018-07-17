@@ -7,34 +7,6 @@
 // Get comments for a particular post id
 // https://jsonplaceholder.typicode.com/posts/21/comments
 
-// let p = new Promise((resolve, reject) => {
-//   // Make a request to the server
-//   // If the request is successful
-//   //    resolve()
-//   // If the request is failed
-//   //    reject()
-
-//   setTimeout(() => {
-//     // console.log('request is fulfilled.');
-//     reject('request failed');
-//     // resolve({
-//     //   id: 1,
-//     //   name: 'naveen'
-//     // });
-//   }, 3000);
-// });
-
-// console.log('p:', p);
-
-// p.then((data) => {
-//   console.log('Long running request succeeded.', data);
-
-// });
-// p.catch((error) => {
-//   console.log('Long running request failed.', error);
-
-// });
-
 const username = 'Samantha';
 xhrGet(`https://jsonplaceholder.typicode.com/users/?username=${username}`)
   .then(function (users) {
@@ -60,5 +32,7 @@ xhrGet(`https://jsonplaceholder.typicode.com/users/?username=${username}`)
     console.log('Error:', error.message);
   });
 
-// more tasks;
-console.log('continuing with my other tasks');
+// Promises do not block, they initiate the long running operations
+// and continue with the next tasks.
+// ...more tasks
+console.log('Continuing with my other tasks');
