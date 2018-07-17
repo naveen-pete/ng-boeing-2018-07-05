@@ -62,6 +62,7 @@ xhrGet(`https://jsonplaceholder.typicode.com/users/?username=${username}`, (err,
 // a();
 // b();
 
+// Arrow Functions
 // 1
 // var double = (n) => {
 //   return n * 2;
