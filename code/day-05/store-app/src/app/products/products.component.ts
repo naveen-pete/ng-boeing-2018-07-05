@@ -34,4 +34,9 @@ export class ProductsComponent {
   ];
 
   constructor() {}
+
+  onProductCreated(newProduct: Product) {
+    this.products.unshift(newProduct);
+    console.log('productCreated event handler invoked');
+  }
 }
