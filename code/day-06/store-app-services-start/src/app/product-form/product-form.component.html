@@ -1,0 +1,29 @@
+<div class="card bg-light mb-3">
+  <div class="card-body">
+    <h4 class="card-title" appHighlight [color]="'lightgreen'">Product Form</h4>
+    <form>
+      <div class="form-group">
+        <label for="name">Name</label>
+        <input id="name" type="text" class="form-control" [(ngModel)]="product.name" name="name">
+      </div>
+      <div class="form-group">
+        <label for="description">Description</label>
+        <textarea id="description" type="text" class="form-control" [(ngModel)]="product.description" name="description"></textarea>
+      </div>
+      <div class="form-group">
+        <label for="price">Price</label>
+        <input id="price" type="text" class="form-control" [(ngModel)]="product.price" name="price">
+      </div>
+      <div class="form-group form-check">
+        <input id="isAvailable" type="checkbox" class="form-check-input" [(ngModel)]="product.isAvailable" name="isAvailable">
+        <label for="isAvailable">Is Available?</label>
+
+      </div>
+      <button type="button" class="btn btn-primary" (click)="onSubmit()">Submit</button>
+    </form>
+  </div>
+</div>
+
+<div class="alert alert-success" *ngIf="showMessage">
+  Product created successfully.
+</div>

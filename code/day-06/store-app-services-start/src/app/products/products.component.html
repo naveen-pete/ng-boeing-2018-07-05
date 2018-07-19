@@ -1,0 +1,18 @@
+<div class="container">
+  <div class="row mb-3">
+    <div class="col">
+      <strong appHighlight>Date: {{ today | date | uppercase }}</strong>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-sm-6 col-md-5 col-lg-4">
+      <app-product-form (created)="onProductCreated($event)"></app-product-form>
+    </div>
+
+    <div class="col-sm-6 col-md-7 col-lg-8">
+      <input type="text" class="form-control mb-3" placeholder="Search..." [(ngModel)]="searchText" name="searchText" />
+
+      <app-product-detail [productData]="product" *ngFor="let product of products | search : searchText : 'description'"></app-product-detail>
+    </div>
+  </div>
+</div>
