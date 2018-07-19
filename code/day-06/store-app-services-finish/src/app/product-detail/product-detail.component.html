@@ -1,0 +1,19 @@
+<div class="card mb-4">
+  <div class="card-header">
+    <h4>{{ product.name | uppercase }}</h4>
+  </div>
+  <div class="card-body">
+    <p appHighlight color="lightblue" class="card-text" [ngStyle]="{ color: product.isAvailable ? 'blue' : 'red' }">
+      <strong>Description:</strong> {{ product.description }}
+    </p>
+  </div>
+  <ul class="list-group list-group-flush">
+    <li class="list-group-item">
+      <strong>Price:</strong> {{ product.price | currency : 'INR' : 'symbol'}}
+    </li>
+    <li class="list-group-item">
+      <strong>Available:</strong>
+      <span class="badge" [ngClass]="product.isAvailable ? 'badge-success' : 'badge-warning'">{{ product.isAvailable ? 'Yes' : 'No' }}</span>
+    </li>
+  </ul>
+</div>
