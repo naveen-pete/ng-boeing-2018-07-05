@@ -1,0 +1,15 @@
+<div class="card mb-3">
+  <div class="card-header">
+    <h4>{{ product.name | uppercase }}</h4>
+  </div>
+  <ul class="list-group list-group-flush">
+    <li class="list-group-item">Description:
+      <span [ngStyle]="{ color: product.isAvailable ? 'blue' : 'red'}"> {{ product.description }}</span>
+    </li>
+    <li class="list-group-item">Price: {{ product.price | currency : 'INR' }}</li>
+    <li class="list-group-item">Is Available?
+      <!-- <span class="badge" [ngClass]="{'badge-success': product.isAvailable, 'badge-warning': !product.isAvailable}">{{ product.isAvailable ? 'Yes' : 'No' }}</span> -->
+      <span class="badge" [ngClass]="product.isAvailable ? 'badge-success' : 'badge-warning'">{{ product.isAvailable ? 'Yes' : 'No' }}</span>
+    </li>
+  </ul>
+</div>
