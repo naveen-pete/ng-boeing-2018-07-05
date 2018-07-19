@@ -8,6 +8,7 @@ import { Product } from '../models/product';
 })
 export class ProductsComponent {
   today = Date.now();
+  searchText: string = '';
 
   products: Product[] = [
     {
