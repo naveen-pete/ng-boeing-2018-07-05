@@ -65,7 +65,7 @@ describe('ProductsComponent (async)', () => {
     expect(component.products).toEqual(testProducts);
   });
 
-  it('should set products property with the items returned from the server (Promise, async, whenStable)', async(() => {
+  xit('should set products property with the items returned from the server (Promise, async, whenStable)', async(() => {
     spyOn(service, 'getProductsPromise').and.returnValue(
       Promise.resolve(testProducts)
     );
@@ -77,7 +77,7 @@ describe('ProductsComponent (async)', () => {
       .then(() => expect(component.products).toEqual(testProducts));
   }));
 
-  xit(
+  it(
     'should set products property with the items returned from the server (Promise, fakeAsync, tick)',
     fakeAsync(() => {
       spyOn(service, 'getProductsPromise').and.returnValue(

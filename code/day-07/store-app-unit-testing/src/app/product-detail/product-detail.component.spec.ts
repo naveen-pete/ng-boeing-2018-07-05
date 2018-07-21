@@ -20,7 +20,7 @@ class ActivatedRouteStub {
   }
 }
 
-xdescribe('ProductDetailComponent', () => {
+describe('ProductDetailComponent', () => {
   let fixture: ComponentFixture<ProductDetailComponent>;
   let component: ProductDetailComponent;
 
@@ -82,7 +82,7 @@ xdescribe('ProductDetailComponent', () => {
     expect(spy).toHaveBeenCalledWith(['/products', component.id, 'edit']);
   });
 
-  it('should navigate the user to the `Not Found` component when an invalid product id is passed', () => {
+  xit('should navigate the user to the `Not Found` component when an invalid product id is passed', () => {
     const router = TestBed.get(Router);
     const spy = spyOn(router, 'navigate');
 

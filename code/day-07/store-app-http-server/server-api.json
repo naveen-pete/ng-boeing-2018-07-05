@@ -2,10 +2,10 @@
   "products": [
     {
       "id": 1,
-      "name": "Data Structures and Algorithms  1",
+      "name": "Data Structures and Algorithms  updated",
       "description": "Book description 1",
       "isAvailable": true,
-      "price": 250
+      "price": 400
     },
     {
       "id": 2,
@@ -39,7 +39,7 @@
       "name": "p102",
       "description": "p102 desc",
       "price": 102,
-      "isAvailable": true,
+      "isAvailable": false,
       "id": 7
     }
   ],
